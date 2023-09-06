@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <style>
+		        /* 自定义音频播放器的样式 */
+		        audio {
+		            width: 100%; /* 让播放器充满整个容器 */
+		        }
+		
+		        /* 按钮样式 */
+		        audio::-webkit-media-controls-play-button,
+		        audio::-webkit-media-controls-pause-button,
+		        audio::-webkit-media-controls-volume-slider {
+		            background-color: #3498db; /* 播放、暂停按钮和音量滑块的背景颜色 */
+		        }
+		
+		        /* 播放按钮的颜色 */
+		        audio::-webkit-media-controls-play-button {
+		            color: white;
+		        }
+		
+		        /* 音量滑块的颜色 */
+		        audio::-webkit-media-controls-volume-slider {
+		            background-color: #ecf0f1;
+		        }
+		    </style>
+		<meta charset="utf-8" />
+		<title>晵屹·江边夜谈</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<audio controls>
+		    <source src="file:///C:/Users/86189/Documents/HBuilderProjects/晵屹·江边夜谈/11.mp3" type="audio/mpeg">
+		    您的浏览器不支持音频播放。
+		</audio>
+			<div class="logo">
+				<img src="img/俩.jpg">
+				<h4>晵屹·江边夜谈</h4>
+			</div>
+			<audio src="11.mp3" controls  loop style="position: fixed;left:0;z-index: 10000;"></audio>
+	</body>
+	
+</html>
